@@ -59,6 +59,7 @@
     <EntitySetMapping Name="TblPersonel">
       <EntityTypeMapping TypeName="DbisTakipModel.TblPersonel">
         <MappingFragment StoreEntitySet="TblPersonel">
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Ad" ColumnName="Ad" />
           <ScalarProperty Name="Soyad" ColumnName="Soyad" />

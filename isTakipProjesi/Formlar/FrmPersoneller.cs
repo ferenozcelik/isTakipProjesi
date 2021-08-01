@@ -34,9 +34,10 @@ namespace isTakipProjesi.Formlar
                              x.Ad,
                              x.Soyad,
                              x.Mail,
-                             x.Departman
+                             Departman = x.TblDepartmanlar.Ad,
+                             x.Durum
                          };
-            gridControl1.DataSource = values.ToList();
+            gridControl1.DataSource = values.Where(x => x.Durum == true).ToList();
         }
 
         private void FrmPersoneller_Load(object sender, EventArgs e)
@@ -74,6 +75,40 @@ namespace isTakipProjesi.Formlar
 
             PersonelListele();
             XtraMessageBox.Show("Yeni personel eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            var id = int.Parse(TxtID.Text);
+            var value = db.TblPersonel.Find(id);
+            value.Durum = false;
+            db.SaveChanges();
+            PersonelListele();
+            XtraMessageBox.Show("Personel silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            TxtID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
+            TxtAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
+            TxtSoyad.Text = gridView1.GetFocusedRowCellValue("Soyad").ToString();
+            TxtMail.Text = gridView1.GetFocusedRowCellValue("Mail").ToString();
+            //TxtGorsel.Text = gridView1.GetFocusedRowCellValue("Gorsel").ToString();
+            lookUpEdit1.Text = gridView1.GetFocusedRowCellValue("Departman").ToString();
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(TxtID.Text);
+            var value = db.TblPersonel.Find(id);
+            value.Ad = TxtAd.Text;
+            value.Soyad = TxtSoyad.Text;
+            value.Mail = TxtMail.Text;
+            value.Gorsel = TxtGorsel.Text;
+            value.Departman = int.Parse(lookUpEdit1.EditValue.ToString());
+            db.SaveChanges();
+            PersonelListele();
+            XtraMessageBox.Show("Personel güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
