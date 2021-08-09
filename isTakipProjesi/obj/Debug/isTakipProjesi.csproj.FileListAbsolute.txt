@@ -98,3 +98,4 @@ C:\Users\Asus\source\repos\isTakipProjesi\isTakipProjesi\bin\Debug\EntityFramewo
 C:\Users\Asus\source\repos\isTakipProjesi\isTakipProjesi\bin\Debug\EntityFramework.xml
 C:\Users\Asus\source\repos\isTakipProjesi\isTakipProjesi\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Asus\source\repos\isTakipProjesi\isTakipProjesi\obj\Debug\isTakipProjesi.Formlar.FrmPersoneller.resources
+C:\Users\Asus\source\repos\isTakipProjesi\isTakipProjesi\obj\Debug\isTakipProjesi.Formlar.FrmPersonelİstatistik.resources

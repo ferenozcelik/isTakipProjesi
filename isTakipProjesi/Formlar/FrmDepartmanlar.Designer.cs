@@ -64,6 +64,7 @@ namespace isTakipProjesi.Formlar
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
@@ -158,6 +159,7 @@ namespace isTakipProjesi.Formlar
             this.TxtID.Name = "TxtID";
             this.TxtID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13F);
             this.TxtID.Properties.Appearance.Options.UseFont = true;
+            this.TxtID.Properties.ReadOnly = true;
             this.TxtID.Size = new System.Drawing.Size(189, 28);
             this.TxtID.TabIndex = 1;
             this.TxtID.EditValueChanged += new System.EventHandler(this.TxtID_EditValueChanged);

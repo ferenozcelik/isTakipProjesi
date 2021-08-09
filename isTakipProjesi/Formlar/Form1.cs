@@ -30,5 +30,12 @@ namespace isTakipProjesi
             frmPersonel.MdiParent = this;
             frmPersonel.Show();
         }
+
+        private void BtnPersonelİstatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmPersonelİstatistik frmPersonelİstatistik = new Formlar.FrmPersonelİstatistik();
+            frmPersonelİstatistik.MdiParent = this;
+            frmPersonelİstatistik.Show();
+        }
     }
 }

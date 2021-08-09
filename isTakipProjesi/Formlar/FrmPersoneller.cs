@@ -8,19 +8,40 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using isTakipProjesi.Constants;
 using isTakipProjesi.Entity;
 
 namespace isTakipProjesi.Formlar
 {
     public partial class FrmPersoneller : Form
     {
+        DbisTakipEntities db = new DbisTakipEntities();
+
+
         public FrmPersoneller()
         {
             InitializeComponent();
         }
 
-        DbisTakipEntities db = new DbisTakipEntities();
-        
+
+        private void FrmPersoneller_Load(object sender, EventArgs e)
+        {
+            PersonelListele();
+
+
+            var departments = (from x in db.TblDepartmanlar
+                               select new
+                               {
+                                   x.ID,
+                                   x.Ad
+                               }).ToList();
+
+            lookUpEdit1.Properties.ValueMember = "ID";
+            lookUpEdit1.Properties.DisplayMember = "Ad";
+            lookUpEdit1.Properties.DataSource = departments;
+        }
+
+
         /// <summary>
         /// Personel tablosundan ID, Ad, Soyad, Mail, Departman kolonlarını al ve values'e kaydet.
         /// gridControl DataSource içine values'u listeleyerek ver.
@@ -40,29 +61,13 @@ namespace isTakipProjesi.Formlar
             gridControl1.DataSource = values.Where(x => x.Durum == true).ToList();
         }
 
-        private void FrmPersoneller_Load(object sender, EventArgs e)
-        {
-            PersonelListele();
-
-
-            var departmants = (from x in db.TblDepartmanlar
-                              select new
-                              {
-                                  x.ID,
-                                  x.Ad
-                              }).ToList();
-
-            lookUpEdit1.Properties.ValueMember = "ID";
-            lookUpEdit1.Properties.DisplayMember = "Ad";
-            lookUpEdit1.Properties.DataSource = departmants;
-        }
-
         private void BtnListele_Click(object sender, EventArgs e)
         {
             PersonelListele();
         }
 
-        private void BtnEkle_Click(object sender, EventArgs e)
+
+        void PersonelEkle()
         {
             TblPersonel t = new TblPersonel();
             t.Ad = TxtAd.Text;
@@ -76,16 +81,34 @@ namespace isTakipProjesi.Formlar
             PersonelListele();
             XtraMessageBox.Show("Yeni personel eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        private void BtnEkle_Click(object sender, EventArgs e)
+        {
+            if (Confirmation.Confirm() == DialogResult.Yes)
+            {
+                PersonelEkle();   
+            }
+            else { }
+        }
 
-        private void BtnSil_Click(object sender, EventArgs e)
+
+        void PersonelSil()
         {
             var id = int.Parse(TxtID.Text);
             var value = db.TblPersonel.Find(id);
             value.Durum = false;
             db.SaveChanges();
             PersonelListele();
-            XtraMessageBox.Show("Personel silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            XtraMessageBox.Show("Personel kaydı silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            if (Confirmation.Confirm() == DialogResult.Yes)
+            {
+                PersonelSil();
+            }
+            else { }
+        }
+
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
@@ -97,7 +120,8 @@ namespace isTakipProjesi.Formlar
             lookUpEdit1.Text = gridView1.GetFocusedRowCellValue("Departman").ToString();
         }
 
-        private void BtnGuncelle_Click(object sender, EventArgs e)
+
+        void PersonelGuncelle()
         {
             int id = int.Parse(TxtID.Text);
             var value = db.TblPersonel.Find(id);
@@ -110,5 +134,15 @@ namespace isTakipProjesi.Formlar
             PersonelListele();
             XtraMessageBox.Show("Personel güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            if (Confirmation.Confirm() == DialogResult.Yes)
+            {
+                PersonelGuncelle();
+            }
+            else { }
+        }
     }
 }
+
+

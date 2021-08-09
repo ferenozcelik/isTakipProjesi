@@ -39,7 +39,7 @@ namespace isTakipProjesi
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnPersonelListesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnPersonelİstatistik = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
@@ -94,7 +94,7 @@ namespace isTakipProjesi
             this.barButtonItem5,
             this.BtnPersonelListesi,
             this.barButtonItem7,
-            this.barButtonItem8,
+            this.BtnPersonelİstatistik,
             this.barButtonItem9,
             this.barButtonItem10,
             this.barButtonItem11,
@@ -165,7 +165,7 @@ namespace isTakipProjesi
             // 
             this.BtnPersonelListesi.Caption = "Personel Listesi";
             this.BtnPersonelListesi.Id = 6;
-            this.BtnPersonelListesi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem6.ImageOptions.SvgImage")));
+            this.BtnPersonelListesi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnPersonelListesi.ImageOptions.SvgImage")));
             this.BtnPersonelListesi.Name = "BtnPersonelListesi";
             this.BtnPersonelListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnPersonelListesi_ItemClick);
             // 
@@ -176,12 +176,13 @@ namespace isTakipProjesi
             this.barButtonItem7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem7.ImageOptions.SvgImage")));
             this.barButtonItem7.Name = "barButtonItem7";
             // 
-            // barButtonItem8
+            // BtnPersonelİstatistik
             // 
-            this.barButtonItem8.Caption = "Personel İstatistikleri";
-            this.barButtonItem8.Id = 8;
-            this.barButtonItem8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
-            this.barButtonItem8.Name = "barButtonItem8";
+            this.BtnPersonelİstatistik.Caption = "Personel İstatistikleri";
+            this.BtnPersonelİstatistik.Id = 8;
+            this.BtnPersonelİstatistik.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
+            this.BtnPersonelİstatistik.Name = "BtnPersonelİstatistik";
+            this.BtnPersonelİstatistik.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnPersonelİstatistik_ItemClick);
             // 
             // barButtonItem9
             // 
@@ -343,7 +344,7 @@ namespace isTakipProjesi
             // 
             // ribbonPageGroup5
             // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem8);
+            this.ribbonPageGroup5.ItemLinks.Add(this.BtnPersonelİstatistik);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             // 
             // ribbonPage4
@@ -462,7 +463,7 @@ namespace isTakipProjesi
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonItem BtnPersonelListesi;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.BarButtonItem BtnPersonelİstatistik;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;

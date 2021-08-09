@@ -75,6 +75,7 @@ namespace isTakipProjesi.Formlar
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
@@ -184,7 +185,7 @@ namespace isTakipProjesi.Formlar
             // 
             this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 13F);
             this.BtnGuncelle.Appearance.Options.UseFont = true;
-            this.BtnGuncelle.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton4.ImageOptions.SvgImage")));
+            this.BtnGuncelle.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnGuncelle.ImageOptions.SvgImage")));
             this.BtnGuncelle.Location = new System.Drawing.Point(153, 360);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(189, 38);
@@ -253,6 +254,7 @@ namespace isTakipProjesi.Formlar
             this.TxtID.Name = "TxtID";
             this.TxtID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.TxtID.Properties.Appearance.Options.UseFont = true;
+            this.TxtID.Properties.ReadOnly = true;
             this.TxtID.Size = new System.Drawing.Size(189, 26);
             this.TxtID.TabIndex = 1;
             // 
