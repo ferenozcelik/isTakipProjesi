@@ -37,5 +37,41 @@ namespace isTakipProjesi
             frmPersonelİstatistik.MdiParent = this;
             frmPersonelİstatistik.Show();
         }
+
+
+        Formlar.FrmGorevListesi frmGorevListesi;
+        private void BtnGorevListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmGorevListesi == null || frmGorevListesi.IsDisposed)
+            {
+                frmGorevListesi = new Formlar.FrmGorevListesi();
+                frmGorevListesi.MdiParent = this;
+                frmGorevListesi.Show();
+            }
+        }
+
+        private void BtnYeniGorev_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmYeniGorev frmYeniGorev = new Formlar.FrmYeniGorev();
+            frmYeniGorev.Show();
+        }
+
+        private void BtnGorevDetay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmGorevDetay frmGorevDetay = new Formlar.FrmGorevDetay();
+            frmGorevDetay.Show();
+        }
+
+
+        Formlar.FrmAnaForm frmAnaForm;
+        private void BtnAnaForm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmAnaForm == null || frmAnaForm.IsDisposed)
+            {
+                frmAnaForm = new Formlar.FrmAnaForm();
+                frmAnaForm.MdiParent = this;
+                frmAnaForm.Show();
+            }
+        }
     }
 }

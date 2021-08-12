@@ -49,7 +49,7 @@
     <Property Name="GorevVeren" Type="Int32" />
     <Property Name="GorevAlan" Type="Int32" />
     <Property Name="Aciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
-    <Property Name="Durum" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Durum" Type="Boolean" />
     <Property Name="Tarih" Type="DateTime" Precision="0" />
     <NavigationProperty Name="TblGorevDetaylar" Relationship="Self.FK_TblGorevDetaylar_TblGorevler1" FromRole="TblGorevler" ToRole="TblGorevDetaylar" />
     <NavigationProperty Name="TblPersonel" Relationship="Self.FK_TblGorevler_TblPersonel2" FromRole="TblGorevler" ToRole="TblPersonel" />

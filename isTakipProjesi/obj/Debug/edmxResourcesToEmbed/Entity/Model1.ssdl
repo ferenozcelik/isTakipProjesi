@@ -47,7 +47,7 @@
     <Property Name="GorevVeren" Type="int" />
     <Property Name="GorevAlan" Type="int" />
     <Property Name="Aciklama" Type="nvarchar" MaxLength="500" />
-    <Property Name="Durum" Type="nvarchar" MaxLength="30" />
+    <Property Name="Durum" Type="bit" />
     <Property Name="Tarih" Type="date" />
   </EntityType>
   <EntityType Name="TblPersonel">

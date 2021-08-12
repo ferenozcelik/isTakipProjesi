@@ -29,45 +29,47 @@ namespace isTakipProjesi.Formlar
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.LabelToplamPersonel = new DevExpress.XtraEditors.LabelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl9 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.LabelToplamDepartman = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.LabelAktifis = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.LabelPasifis = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.LabelSonGorevTarihi = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.LabelSonGorev = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl10 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
+            this.LabelToplamFirma = new DevExpress.XtraEditors.LabelControl();
             this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl11 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
+            this.LabelSehirSayisi = new DevExpress.XtraEditors.LabelControl();
             this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl12 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
+            this.LabelMevcutGunlukGorevler = new DevExpress.XtraEditors.LabelControl();
             this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl13 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
+            this.LabelEnDegerliDepartman = new DevExpress.XtraEditors.LabelControl();
             this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl14 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
+            this.LabelEnDegerliPersonel = new DevExpress.XtraEditors.LabelControl();
             this.labelControl28 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl15 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl29 = new DevExpress.XtraEditors.LabelControl();
+            this.LabelSektorSayisi = new DevExpress.XtraEditors.LabelControl();
             this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
@@ -94,23 +96,24 @@ namespace isTakipProjesi.Formlar
             this.panelControl14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl15)).BeginInit();
             this.panelControl15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(72, 5);
+            this.labelControl1.Location = new System.Drawing.Point(61, 5);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(175, 33);
+            this.labelControl1.Size = new System.Drawing.Size(198, 33);
             this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "Personel Sayısı";
+            this.labelControl1.Text = "Toplam Personel";
             // 
             // panelControl1
             // 
             this.panelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(195)))), ((int)(((byte)(18)))));
             this.panelControl1.Appearance.Options.UseBackColor = true;
-            this.panelControl1.Controls.Add(this.labelControl2);
+            this.panelControl1.Controls.Add(this.LabelToplamPersonel);
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Location = new System.Drawing.Point(12, 17);
             this.panelControl1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
@@ -119,22 +122,22 @@ namespace isTakipProjesi.Formlar
             this.panelControl1.Size = new System.Drawing.Size(320, 125);
             this.panelControl1.TabIndex = 1;
             // 
-            // labelControl2
+            // LabelToplamPersonel
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(140, 40);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(35, 77);
-            this.labelControl2.TabIndex = 1;
-            this.labelControl2.Text = "0";
+            this.LabelToplamPersonel.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelToplamPersonel.Appearance.Options.UseFont = true;
+            this.LabelToplamPersonel.Location = new System.Drawing.Point(140, 40);
+            this.LabelToplamPersonel.Name = "LabelToplamPersonel";
+            this.LabelToplamPersonel.Size = new System.Drawing.Size(35, 77);
+            this.LabelToplamPersonel.TabIndex = 1;
+            this.LabelToplamPersonel.Text = "0";
             // 
             // panelControl3
             // 
             this.panelControl3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(229)))), ((int)(((byte)(56)))));
             this.panelControl3.Appearance.Options.UseBackColor = true;
             this.panelControl3.Controls.Add(this.panelControl9);
-            this.panelControl3.Controls.Add(this.labelControl5);
+            this.panelControl3.Controls.Add(this.LabelToplamDepartman);
             this.panelControl3.Controls.Add(this.labelControl6);
             this.panelControl3.Location = new System.Drawing.Point(338, 17);
             this.panelControl3.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
@@ -172,31 +175,31 @@ namespace isTakipProjesi.Formlar
             this.labelControl18.TabIndex = 0;
             this.labelControl18.Text = "Toplam Personel Sayısı";
             // 
-            // labelControl5
+            // LabelToplamDepartman
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(141, 40);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(35, 77);
-            this.labelControl5.TabIndex = 1;
-            this.labelControl5.Text = "0";
+            this.LabelToplamDepartman.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelToplamDepartman.Appearance.Options.UseFont = true;
+            this.LabelToplamDepartman.Location = new System.Drawing.Point(133, 40);
+            this.LabelToplamDepartman.Name = "LabelToplamDepartman";
+            this.LabelToplamDepartman.Size = new System.Drawing.Size(35, 77);
+            this.LabelToplamDepartman.TabIndex = 1;
+            this.LabelToplamDepartman.Text = "0";
             // 
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(56, 5);
+            this.labelControl6.Location = new System.Drawing.Point(46, 5);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(206, 33);
+            this.labelControl6.Size = new System.Drawing.Size(229, 33);
             this.labelControl6.TabIndex = 0;
-            this.labelControl6.Text = "Departman Sayısı";
+            this.labelControl6.Text = "Toplam Departman";
             // 
             // panelControl4
             // 
             this.panelControl4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(203)))), ((int)(((byte)(196)))));
             this.panelControl4.Appearance.Options.UseBackColor = true;
-            this.panelControl4.Controls.Add(this.labelControl7);
+            this.panelControl4.Controls.Add(this.LabelAktifis);
             this.panelControl4.Controls.Add(this.labelControl8);
             this.panelControl4.Location = new System.Drawing.Point(664, 17);
             this.panelControl4.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
@@ -205,15 +208,15 @@ namespace isTakipProjesi.Formlar
             this.panelControl4.Size = new System.Drawing.Size(320, 125);
             this.panelControl4.TabIndex = 3;
             // 
-            // labelControl7
+            // LabelAktifis
             // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(141, 40);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(35, 77);
-            this.labelControl7.TabIndex = 1;
-            this.labelControl7.Text = "0";
+            this.LabelAktifis.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelAktifis.Appearance.Options.UseFont = true;
+            this.LabelAktifis.Location = new System.Drawing.Point(141, 40);
+            this.LabelAktifis.Name = "LabelAktifis";
+            this.LabelAktifis.Size = new System.Drawing.Size(35, 77);
+            this.LabelAktifis.TabIndex = 1;
+            this.LabelAktifis.Text = "0";
             // 
             // labelControl8
             // 
@@ -229,7 +232,7 @@ namespace isTakipProjesi.Formlar
             // 
             this.panelControl5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(76)))), ((int)(((byte)(103)))));
             this.panelControl5.Appearance.Options.UseBackColor = true;
-            this.panelControl5.Controls.Add(this.labelControl9);
+            this.panelControl5.Controls.Add(this.LabelPasifis);
             this.panelControl5.Controls.Add(this.labelControl10);
             this.panelControl5.Location = new System.Drawing.Point(990, 17);
             this.panelControl5.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
@@ -238,21 +241,21 @@ namespace isTakipProjesi.Formlar
             this.panelControl5.Size = new System.Drawing.Size(320, 125);
             this.panelControl5.TabIndex = 4;
             // 
-            // labelControl9
+            // LabelPasifis
             // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(143, 40);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(35, 77);
-            this.labelControl9.TabIndex = 1;
-            this.labelControl9.Text = "0";
+            this.LabelPasifis.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelPasifis.Appearance.Options.UseFont = true;
+            this.LabelPasifis.Location = new System.Drawing.Point(143, 40);
+            this.LabelPasifis.Name = "LabelPasifis";
+            this.LabelPasifis.Size = new System.Drawing.Size(35, 77);
+            this.LabelPasifis.TabIndex = 1;
+            this.LabelPasifis.Text = "0";
             // 
             // labelControl10
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(111, 5);
+            this.labelControl10.Location = new System.Drawing.Point(116, 5);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(86, 33);
             this.labelControl10.TabIndex = 0;
@@ -260,60 +263,59 @@ namespace isTakipProjesi.Formlar
             // 
             // panelControl2
             // 
-            this.panelControl2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(159)))), ((int)(((byte)(31)))));
+            this.panelControl2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(120)))), ((int)(((byte)(36)))));
             this.panelControl2.Appearance.Options.UseBackColor = true;
-            this.panelControl2.Controls.Add(this.labelControl3);
+            this.panelControl2.Controls.Add(this.LabelSonGorevTarihi);
             this.panelControl2.Controls.Add(this.labelControl4);
-            this.panelControl2.Location = new System.Drawing.Point(12, 148);
+            this.panelControl2.Location = new System.Drawing.Point(12, 279);
             this.panelControl2.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.panelControl2.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(320, 125);
             this.panelControl2.TabIndex = 2;
             // 
-            // labelControl3
+            // LabelSonGorevTarihi
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(140, 40);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(35, 77);
-            this.labelControl3.TabIndex = 1;
-            this.labelControl3.Text = "0";
+            this.LabelSonGorevTarihi.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelSonGorevTarihi.Appearance.Options.UseFont = true;
+            this.LabelSonGorevTarihi.Location = new System.Drawing.Point(23, 60);
+            this.LabelSonGorevTarihi.Name = "LabelSonGorevTarihi";
+            this.LabelSonGorevTarihi.Size = new System.Drawing.Size(15, 33);
+            this.LabelSonGorevTarihi.TabIndex = 1;
+            this.LabelSonGorevTarihi.Text = "0";
             // 
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(101, 5);
+            this.labelControl4.Location = new System.Drawing.Point(61, 5);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(112, 33);
+            this.labelControl4.Size = new System.Drawing.Size(198, 33);
             this.labelControl4.TabIndex = 0;
-            this.labelControl4.Text = "Günlük İş";
+            this.labelControl4.Text = "Son Görev Tarihi";
             // 
             // panelControl6
             // 
-            this.panelControl6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(120)))), ((int)(((byte)(36)))));
+            this.panelControl6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(159)))), ((int)(((byte)(31)))));
             this.panelControl6.Appearance.Options.UseBackColor = true;
-            this.panelControl6.Controls.Add(this.labelControl11);
+            this.panelControl6.Controls.Add(this.LabelSonGorev);
             this.panelControl6.Controls.Add(this.labelControl12);
-            this.panelControl6.Location = new System.Drawing.Point(12, 279);
+            this.panelControl6.Location = new System.Drawing.Point(12, 148);
             this.panelControl6.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.panelControl6.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl6.Name = "panelControl6";
             this.panelControl6.Size = new System.Drawing.Size(320, 125);
             this.panelControl6.TabIndex = 3;
-            this.panelControl6.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl6_Paint);
             // 
-            // labelControl11
+            // LabelSonGorev
             // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(140, 40);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(35, 77);
-            this.labelControl11.TabIndex = 1;
-            this.labelControl11.Text = "0";
+            this.LabelSonGorev.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelSonGorev.Appearance.Options.UseFont = true;
+            this.LabelSonGorev.Location = new System.Drawing.Point(23, 60);
+            this.LabelSonGorev.Name = "LabelSonGorev";
+            this.LabelSonGorev.Size = new System.Drawing.Size(15, 33);
+            this.LabelSonGorev.TabIndex = 1;
+            this.LabelSonGorev.Text = "0";
             // 
             // labelControl12
             // 
@@ -329,7 +331,7 @@ namespace isTakipProjesi.Formlar
             // 
             this.panelControl10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(203)))), ((int)(((byte)(56)))));
             this.panelControl10.Appearance.Options.UseBackColor = true;
-            this.panelControl10.Controls.Add(this.labelControl19);
+            this.panelControl10.Controls.Add(this.LabelToplamFirma);
             this.panelControl10.Controls.Add(this.labelControl20);
             this.panelControl10.Location = new System.Drawing.Point(338, 148);
             this.panelControl10.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
@@ -338,21 +340,21 @@ namespace isTakipProjesi.Formlar
             this.panelControl10.Size = new System.Drawing.Size(320, 125);
             this.panelControl10.TabIndex = 7;
             // 
-            // labelControl19
+            // LabelToplamFirma
             // 
-            this.labelControl19.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl19.Appearance.Options.UseFont = true;
-            this.labelControl19.Location = new System.Drawing.Point(141, 40);
-            this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(35, 77);
-            this.labelControl19.TabIndex = 1;
-            this.labelControl19.Text = "0";
+            this.LabelToplamFirma.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelToplamFirma.Appearance.Options.UseFont = true;
+            this.LabelToplamFirma.Location = new System.Drawing.Point(133, 40);
+            this.LabelToplamFirma.Name = "LabelToplamFirma";
+            this.LabelToplamFirma.Size = new System.Drawing.Size(35, 77);
+            this.LabelToplamFirma.TabIndex = 1;
+            this.LabelToplamFirma.Text = "0";
             // 
             // labelControl20
             // 
             this.labelControl20.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl20.Appearance.Options.UseFont = true;
-            this.labelControl20.Location = new System.Drawing.Point(95, 5);
+            this.labelControl20.Location = new System.Drawing.Point(88, 5);
             this.labelControl20.Name = "labelControl20";
             this.labelControl20.Size = new System.Drawing.Size(141, 33);
             this.labelControl20.TabIndex = 0;
@@ -362,7 +364,7 @@ namespace isTakipProjesi.Formlar
             // 
             this.panelControl11.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(137)))), ((int)(((byte)(167)))));
             this.panelControl11.Appearance.Options.UseBackColor = true;
-            this.panelControl11.Controls.Add(this.labelControl21);
+            this.panelControl11.Controls.Add(this.LabelSehirSayisi);
             this.panelControl11.Controls.Add(this.labelControl22);
             this.panelControl11.Location = new System.Drawing.Point(664, 148);
             this.panelControl11.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
@@ -371,15 +373,15 @@ namespace isTakipProjesi.Formlar
             this.panelControl11.Size = new System.Drawing.Size(320, 125);
             this.panelControl11.TabIndex = 8;
             // 
-            // labelControl21
+            // LabelSehirSayisi
             // 
-            this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl21.Appearance.Options.UseFont = true;
-            this.labelControl21.Location = new System.Drawing.Point(141, 40);
-            this.labelControl21.Name = "labelControl21";
-            this.labelControl21.Size = new System.Drawing.Size(35, 77);
-            this.labelControl21.TabIndex = 1;
-            this.labelControl21.Text = "0";
+            this.LabelSehirSayisi.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelSehirSayisi.Appearance.Options.UseFont = true;
+            this.LabelSehirSayisi.Location = new System.Drawing.Point(141, 40);
+            this.LabelSehirSayisi.Name = "LabelSehirSayisi";
+            this.LabelSehirSayisi.Size = new System.Drawing.Size(35, 77);
+            this.LabelSehirSayisi.TabIndex = 1;
+            this.LabelSehirSayisi.Text = "0";
             // 
             // labelControl22
             // 
@@ -395,7 +397,7 @@ namespace isTakipProjesi.Formlar
             // 
             this.panelControl12.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(52)))), ((int)(((byte)(113)))));
             this.panelControl12.Appearance.Options.UseBackColor = true;
-            this.panelControl12.Controls.Add(this.labelControl23);
+            this.panelControl12.Controls.Add(this.LabelMevcutGunlukGorevler);
             this.panelControl12.Controls.Add(this.labelControl24);
             this.panelControl12.Location = new System.Drawing.Point(990, 148);
             this.panelControl12.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
@@ -404,31 +406,31 @@ namespace isTakipProjesi.Formlar
             this.panelControl12.Size = new System.Drawing.Size(320, 125);
             this.panelControl12.TabIndex = 9;
             // 
-            // labelControl23
+            // LabelMevcutGunlukGorevler
             // 
-            this.labelControl23.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl23.Appearance.Options.UseFont = true;
-            this.labelControl23.Location = new System.Drawing.Point(143, 40);
-            this.labelControl23.Name = "labelControl23";
-            this.labelControl23.Size = new System.Drawing.Size(35, 77);
-            this.labelControl23.TabIndex = 1;
-            this.labelControl23.Text = "0";
+            this.LabelMevcutGunlukGorevler.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelMevcutGunlukGorevler.Appearance.Options.UseFont = true;
+            this.LabelMevcutGunlukGorevler.Location = new System.Drawing.Point(143, 40);
+            this.LabelMevcutGunlukGorevler.Name = "LabelMevcutGunlukGorevler";
+            this.LabelMevcutGunlukGorevler.Size = new System.Drawing.Size(35, 77);
+            this.LabelMevcutGunlukGorevler.TabIndex = 1;
+            this.LabelMevcutGunlukGorevler.Text = "0";
             // 
             // labelControl24
             // 
             this.labelControl24.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl24.Appearance.Options.UseFont = true;
-            this.labelControl24.Location = new System.Drawing.Point(11, 5);
+            this.labelControl24.Location = new System.Drawing.Point(23, 6);
             this.labelControl24.Name = "labelControl24";
-            this.labelControl24.Size = new System.Drawing.Size(299, 33);
+            this.labelControl24.Size = new System.Drawing.Size(282, 33);
             this.labelControl24.TabIndex = 0;
-            this.labelControl24.Text = "Max Personel/Departman";
+            this.labelControl24.Text = "Mevcut Günlük Görevler";
             // 
             // panelControl13
             // 
             this.panelControl13.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(52)))), ((int)(((byte)(113)))));
             this.panelControl13.Appearance.Options.UseBackColor = true;
-            this.panelControl13.Controls.Add(this.labelControl25);
+            this.panelControl13.Controls.Add(this.LabelEnDegerliDepartman);
             this.panelControl13.Controls.Add(this.labelControl26);
             this.panelControl13.Location = new System.Drawing.Point(992, 279);
             this.panelControl13.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
@@ -436,17 +438,16 @@ namespace isTakipProjesi.Formlar
             this.panelControl13.Name = "panelControl13";
             this.panelControl13.Size = new System.Drawing.Size(320, 125);
             this.panelControl13.TabIndex = 12;
-            this.panelControl13.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl13_Paint);
             // 
-            // labelControl25
+            // LabelEnDegerliDepartman
             // 
-            this.labelControl25.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl25.Appearance.Options.UseFont = true;
-            this.labelControl25.Location = new System.Drawing.Point(141, 40);
-            this.labelControl25.Name = "labelControl25";
-            this.labelControl25.Size = new System.Drawing.Size(35, 77);
-            this.labelControl25.TabIndex = 1;
-            this.labelControl25.Text = "0";
+            this.LabelEnDegerliDepartman.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelEnDegerliDepartman.Appearance.Options.UseFont = true;
+            this.LabelEnDegerliDepartman.Location = new System.Drawing.Point(33, 52);
+            this.LabelEnDegerliDepartman.Name = "LabelEnDegerliDepartman";
+            this.LabelEnDegerliDepartman.Size = new System.Drawing.Size(17, 39);
+            this.LabelEnDegerliDepartman.TabIndex = 1;
+            this.LabelEnDegerliDepartman.Text = "0";
             // 
             // labelControl26
             // 
@@ -462,7 +463,7 @@ namespace isTakipProjesi.Formlar
             // 
             this.panelControl14.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(110)))), ((int)(((byte)(130)))));
             this.panelControl14.Appearance.Options.UseBackColor = true;
-            this.panelControl14.Controls.Add(this.labelControl27);
+            this.panelControl14.Controls.Add(this.LabelEnDegerliPersonel);
             this.panelControl14.Controls.Add(this.labelControl28);
             this.panelControl14.Location = new System.Drawing.Point(665, 279);
             this.panelControl14.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
@@ -470,17 +471,16 @@ namespace isTakipProjesi.Formlar
             this.panelControl14.Name = "panelControl14";
             this.panelControl14.Size = new System.Drawing.Size(320, 125);
             this.panelControl14.TabIndex = 11;
-            this.panelControl14.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl14_Paint);
             // 
-            // labelControl27
+            // LabelEnDegerliPersonel
             // 
-            this.labelControl27.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl27.Appearance.Options.UseFont = true;
-            this.labelControl27.Location = new System.Drawing.Point(140, 40);
-            this.labelControl27.Name = "labelControl27";
-            this.labelControl27.Size = new System.Drawing.Size(35, 77);
-            this.labelControl27.TabIndex = 1;
-            this.labelControl27.Text = "0";
+            this.LabelEnDegerliPersonel.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelEnDegerliPersonel.Appearance.Options.UseFont = true;
+            this.LabelEnDegerliPersonel.Location = new System.Drawing.Point(48, 52);
+            this.LabelEnDegerliPersonel.Name = "LabelEnDegerliPersonel";
+            this.LabelEnDegerliPersonel.Size = new System.Drawing.Size(17, 39);
+            this.LabelEnDegerliPersonel.TabIndex = 1;
+            this.LabelEnDegerliPersonel.Text = "0";
             // 
             // labelControl28
             // 
@@ -496,7 +496,7 @@ namespace isTakipProjesi.Formlar
             // 
             this.panelControl15.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(148)))), ((int)(((byte)(50)))));
             this.panelControl15.Appearance.Options.UseBackColor = true;
-            this.panelControl15.Controls.Add(this.labelControl29);
+            this.panelControl15.Controls.Add(this.LabelSektorSayisi);
             this.panelControl15.Controls.Add(this.labelControl30);
             this.panelControl15.Location = new System.Drawing.Point(338, 279);
             this.panelControl15.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
@@ -504,23 +504,22 @@ namespace isTakipProjesi.Formlar
             this.panelControl15.Name = "panelControl15";
             this.panelControl15.Size = new System.Drawing.Size(320, 125);
             this.panelControl15.TabIndex = 10;
-            this.panelControl15.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl15_Paint);
             // 
-            // labelControl29
+            // LabelSektorSayisi
             // 
-            this.labelControl29.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl29.Appearance.Options.UseFont = true;
-            this.labelControl29.Location = new System.Drawing.Point(141, 40);
-            this.labelControl29.Name = "labelControl29";
-            this.labelControl29.Size = new System.Drawing.Size(35, 77);
-            this.labelControl29.TabIndex = 1;
-            this.labelControl29.Text = "0";
+            this.LabelSektorSayisi.Appearance.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelSektorSayisi.Appearance.Options.UseFont = true;
+            this.LabelSektorSayisi.Location = new System.Drawing.Point(133, 40);
+            this.LabelSektorSayisi.Name = "LabelSektorSayisi";
+            this.LabelSektorSayisi.Size = new System.Drawing.Size(35, 77);
+            this.LabelSektorSayisi.TabIndex = 1;
+            this.LabelSektorSayisi.Text = "0";
             // 
             // labelControl30
             // 
             this.labelControl30.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl30.Appearance.Options.UseFont = true;
-            this.labelControl30.Location = new System.Drawing.Point(88, 5);
+            this.labelControl30.Location = new System.Drawing.Point(79, 6);
             this.labelControl30.Name = "labelControl30";
             this.labelControl30.Size = new System.Drawing.Size(150, 33);
             this.labelControl30.TabIndex = 0;
@@ -533,18 +532,19 @@ namespace isTakipProjesi.Formlar
             this.ClientSize = new System.Drawing.Size(1324, 416);
             this.Controls.Add(this.panelControl13);
             this.Controls.Add(this.panelControl12);
+            this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl14);
             this.Controls.Add(this.panelControl11);
             this.Controls.Add(this.panelControl15);
             this.Controls.Add(this.panelControl10);
             this.Controls.Add(this.panelControl6);
-            this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl5);
             this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl1);
             this.Name = "FrmPersonelİstatistik";
             this.Text = "Personel İstatistikleri";
+            this.Load += new System.EventHandler(this.FrmPersonelİstatistik_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
@@ -584,6 +584,7 @@ namespace isTakipProjesi.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.panelControl15)).EndInit();
             this.panelControl15.ResumeLayout(false);
             this.panelControl15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -592,42 +593,43 @@ namespace isTakipProjesi.Formlar
 
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl LabelToplamPersonel;
         private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraEditors.PanelControl panelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl17;
         private DevExpress.XtraEditors.LabelControl labelControl18;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl LabelToplamDepartman;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.PanelControl panelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.LabelControl LabelAktifis;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.PanelControl panelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.LabelControl LabelPasifis;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.PanelControl panelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl LabelSonGorevTarihi;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.PanelControl panelControl6;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.LabelControl LabelSonGorev;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.PanelControl panelControl10;
-        private DevExpress.XtraEditors.LabelControl labelControl19;
+        private DevExpress.XtraEditors.LabelControl LabelToplamFirma;
         private DevExpress.XtraEditors.LabelControl labelControl20;
         private DevExpress.XtraEditors.PanelControl panelControl11;
-        private DevExpress.XtraEditors.LabelControl labelControl21;
+        private DevExpress.XtraEditors.LabelControl LabelSehirSayisi;
         private DevExpress.XtraEditors.LabelControl labelControl22;
         private DevExpress.XtraEditors.PanelControl panelControl12;
-        private DevExpress.XtraEditors.LabelControl labelControl23;
+        private DevExpress.XtraEditors.LabelControl LabelMevcutGunlukGorevler;
         private DevExpress.XtraEditors.LabelControl labelControl24;
         private DevExpress.XtraEditors.PanelControl panelControl13;
-        private DevExpress.XtraEditors.LabelControl labelControl25;
+        private DevExpress.XtraEditors.LabelControl LabelEnDegerliDepartman;
         private DevExpress.XtraEditors.LabelControl labelControl26;
         private DevExpress.XtraEditors.PanelControl panelControl14;
-        private DevExpress.XtraEditors.LabelControl labelControl27;
+        private DevExpress.XtraEditors.LabelControl LabelEnDegerliPersonel;
         private DevExpress.XtraEditors.LabelControl labelControl28;
         private DevExpress.XtraEditors.PanelControl panelControl15;
-        private DevExpress.XtraEditors.LabelControl labelControl29;
+        private DevExpress.XtraEditors.LabelControl LabelSektorSayisi;
         private DevExpress.XtraEditors.LabelControl labelControl30;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
     }
 }
