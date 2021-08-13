@@ -8,6 +8,17 @@
     <Property Name="Kullanici" Type="nvarchar" MaxLength="20" />
     <Property Name="Sifre" Type="nvarchar" MaxLength="20" />
   </EntityType>
+  <EntityType Name="TblCagrilar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CagriFirma" Type="int" />
+    <Property Name="Konu" Type="nvarchar" MaxLength="50" />
+    <Property Name="Aciklama" Type="nvarchar(max)" />
+    <Property Name="Tarih" Type="date" />
+    <Property Name="Durum" Type="bit" />
+  </EntityType>
   <EntityType Name="TblDepartmanlar">
     <Key>
       <PropertyRef Name="ID" />
@@ -63,6 +74,18 @@
     <Property Name="Departman" Type="int" />
     <Property Name="Durum" Type="bit" />
   </EntityType>
+  <Association Name="FK_TblCagrilar_TblFirmalar">
+    <End Role="TblFirmalar" Type="Self.TblFirmalar" Multiplicity="0..1" />
+    <End Role="TblCagrilar" Type="Self.TblCagrilar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblFirmalar">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TblCagrilar">
+        <PropertyRef Name="CagriFirma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_TblGorevDetaylar_TblGorevler1">
     <End Role="TblGorevler" Type="Self.TblGorevler" Multiplicity="0..1" />
     <End Role="TblGorevDetaylar" Type="Self.TblGorevDetaylar" Multiplicity="*" />
@@ -113,11 +136,16 @@
   </Association>
   <EntityContainer Name="DbisTakipModelStoreContainer">
     <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblCagrilar" EntityType="Self.TblCagrilar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblDepartmanlar" EntityType="Self.TblDepartmanlar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblFirmalar" EntityType="Self.TblFirmalar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblGorevDetaylar" EntityType="Self.TblGorevDetaylar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblGorevler" EntityType="Self.TblGorevler" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblPersonel" EntityType="Self.TblPersonel" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TblCagrilar_TblFirmalar" Association="Self.FK_TblCagrilar_TblFirmalar">
+      <End Role="TblFirmalar" EntitySet="TblFirmalar" />
+      <End Role="TblCagrilar" EntitySet="TblCagrilar" />
+    </AssociationSet>
     <AssociationSet Name="FK_TblGorevDetaylar_TblGorevler1" Association="Self.FK_TblGorevDetaylar_TblGorevler1">
       <End Role="TblGorevler" EntitySet="TblGorevler" />
       <End Role="TblGorevDetaylar" EntitySet="TblGorevDetaylar" />

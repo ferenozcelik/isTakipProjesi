@@ -128,7 +128,7 @@ namespace isTakipProjesi
             // 
             this.BtnAnaForm.Caption = "Ana Sayfa";
             this.BtnAnaForm.Id = 1;
-            this.BtnAnaForm.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.BtnAnaForm.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnAnaForm.ImageOptions.SvgImage")));
             this.BtnAnaForm.Name = "BtnAnaForm";
             this.BtnAnaForm.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnAnaForm_ItemClick);
             // 
@@ -445,6 +445,7 @@ namespace isTakipProjesi
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);

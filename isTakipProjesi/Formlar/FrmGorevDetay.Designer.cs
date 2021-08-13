@@ -125,14 +125,14 @@ namespace isTakipProjesi.Formlar
             // görevDetayıSilToolStripMenuItem
             // 
             this.görevDetayıSilToolStripMenuItem.Name = "görevDetayıSilToolStripMenuItem";
-            this.görevDetayıSilToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.görevDetayıSilToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.görevDetayıSilToolStripMenuItem.Text = "Görev Detayı Sil";
             this.görevDetayıSilToolStripMenuItem.Click += new System.EventHandler(this.görevDetayıSilToolStripMenuItem_Click);
             // 
             // kapatToolStripMenuItem
             // 
             this.kapatToolStripMenuItem.Name = "kapatToolStripMenuItem";
-            this.kapatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kapatToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.kapatToolStripMenuItem.Text = "Kapat";
             // 
             // FrmGorevDetay

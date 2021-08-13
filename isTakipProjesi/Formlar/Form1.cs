@@ -73,5 +73,12 @@ namespace isTakipProjesi
                 frmAnaForm.Show();
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Formlar.FrmAnaForm frmAnaForm = new Formlar.FrmAnaForm();
+            frmAnaForm.MdiParent = this;
+            frmAnaForm.Show();
+        }
     }
 }

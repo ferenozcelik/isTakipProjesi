@@ -246,7 +246,7 @@ namespace isTakipProjesi.Formlar
             // 
             this.BtnYenile.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnYenile.Appearance.Options.UseFont = true;
-            this.BtnYenile.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.BtnYenile.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnYenile.ImageOptions.SvgImage")));
             this.BtnYenile.Location = new System.Drawing.Point(474, 369);
             this.BtnYenile.Name = "BtnYenile";
             this.BtnYenile.Size = new System.Drawing.Size(113, 35);
